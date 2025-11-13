@@ -1,3 +1,11 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px; /* 1rem es igual a 10px */
+}
+
 h1 {
     text-align: center ;
+    font-size: 2rem;
 } 
