@@ -1,30 +1,61 @@
+/* Colores que voy a utilizar en la página*/
 :root {
-    --primario: #77f485;
+    --primario: #cdefd1;
     --secundario: #11991c;
-    --gris: #757575;
+    --gris: #9f9f9f;
     --azul: #0097A7;
     --blanco: #ffffff;
     --negro: #000000;
     --azul2: #5bcad6;
     --naranja: #e26111;
 }
+
+/* css global*/
 html{
     font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
 }
 body{
     font-size: 16px; /* 1rem es igual a 10px */
     font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to top, var(--gris) 0%, var(--primario) 100%);
 }
 
+/* Tipografia*/
 h1 {
-    text-align: center ;
-    font-size: 2rem;
-
+    font-size: 3.8rem;
 } 
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h1,h2,h3{
+    text-align: center;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 2rem;
+}
 
 .centrar {
-    width: 0 auto;
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.sombra {
+    box-shadow:0px 5px 15px 0px var(--secundario);
+    background-color: var(--primario);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+/* Nav principal*/
 .nav-principal {
     position: fixed;
     top: 0;
@@ -54,13 +85,47 @@ h1 {
     font-size: 2rem;
 }
 
-
-main   {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-
-}
 .nav-principal a:hover{
     background-color: var(--naranja);
     color: var(--blanco);
 }
+
+/*Imagenes*/
+.imagen {
+    background-image:url(../imagenes/kgkl.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.imagen2 {
+    position: absolute;
+    background-color: rgba(0,0,0, .6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen2 h2, .imagen2 p{
+    color: var(--blanco);
+}
+
+.imagen3{
+    width: 100px;
+    height: 100px;
+}
+
+/*Bolques*/
+.bloques{
+    display: grid;
+    grid-template-columns: 500px 500px;
+}
+
+/*main   {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}*/
