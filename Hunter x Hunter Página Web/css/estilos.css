@@ -1,11 +1,28 @@
+:root {
+    --primario: #77f485;
+    --secundario: #11991c;
+    --gris: #757575;
+    --azul: #0097A7;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --azul2: #5bcad6;
+    --naranja: #e26111;
+}
 html{
     font-size: 62.5%;
 }
 body{
     font-size: 16px; /* 1rem es igual a 10px */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
     text-align: center ;
     font-size: 2rem;
+
 } 
+
+.nav-principal {
+    background-color: var(--secundario) ;
+    
+}
